@@ -34,4 +34,5 @@ class GameField(object):
 		if self.score > self.highscore:
 			self.highscore = self.score
 		self.score = 0
-		self.field = []
+		self.field = [[0 for i in range(self.width)] for j in range(self.height)]
+		
